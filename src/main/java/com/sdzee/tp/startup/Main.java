@@ -33,10 +33,7 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 			archive.addClassPath(classRoot);
 			deployer.deploy(archive.toURI(), "--name=hello", "--contextroot=/");
 			
-			/*Deployer deployer = glassfish.getDeployer();            
-			File file = new File("tp9-0.0.1-SNAPSHOT.war");      
-			deployer.deploy(file); */
-		} 
+	     } 
 		
 		public static Connection getConnection() throws URISyntaxException, SQLException {
 		    URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
@@ -47,6 +44,6 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 
 		    return DriverManager.getConnection(dbUrl, username, password); 
 		
-	}
+	      }
 		
 }
