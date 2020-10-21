@@ -131,7 +131,20 @@
         	<groupId>com.heroku.sdk</groupId>
         	<artifactId>heroku-jdbc</artifactId>
         	<version>0.1.1</version>
-        </dependency>  
+        </dependency> 
+        
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.3-1102-jdbc41</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        
+ 
        
   </dependencies>
   
