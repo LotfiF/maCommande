@@ -38,7 +38,7 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 			deployer.deploy(file); */
 		} 
 		
-		/*	public static Connection getConnection() throws URISyntaxException, SQLException {
+		public static Connection getConnection() throws URISyntaxException, SQLException {
 		    URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
 
 		    String username = dbUri.getUserInfo().split(":")[0];
@@ -47,6 +47,6 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 
 		    return DriverManager.getConnection(dbUrl, username, password); 
 		
-	}*/
+	}
 		
 }
