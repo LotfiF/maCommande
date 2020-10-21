@@ -36,11 +36,16 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 	     } 
 		
 		public static Connection getConnection() throws URISyntaxException, SQLException {
-		    URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
+		  
+			String username = "bb60ca509a1705";
+			String password = "fcd3cb7a";
+		    String dbUrl = "jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_bcc81ae0aa09e3a?reconnect=true";
+		    		
+			/*  URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
 
 		    String username = dbUri.getUserInfo().split(":")[0];
 		    String password = dbUri.getUserInfo().split(":")[1];
-		    String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath();
+		    String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath(); */
 
 		    return DriverManager.getConnection(dbUrl, username, password); 
 		
