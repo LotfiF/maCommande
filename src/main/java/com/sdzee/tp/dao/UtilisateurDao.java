@@ -15,7 +15,7 @@ import com.sdzee.tp.entities.Utilisateur;
 public class UtilisateurDao implements Serializable {
 	
     // Injection du manager, qui s'occupe de la connexion avec la BDD
-    @PersistenceContext( unitName = "tp_sdzee_PU" )
+    @PersistenceContext( unitName = "ma_commande_PU" )
     private EntityManager em;
     
     public Utilisateur trouver( String email ) throws DAOException {
