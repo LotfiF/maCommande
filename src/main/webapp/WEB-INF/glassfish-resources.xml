@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-connection-pool datasource-classname="com.mysql.cj.jdbc.MysqlDataSource" name="BoneCpPoolTP" res-type="javax.sql.DataSource">
+      <property name="password" value="794817ce"></property>
+      <property name="databaseName" value="heroku_a7c39aa98a99b33"></property>
+      <property name="serverName" value="glassfish-embedded-all 5.1.0"></property>
+      <property name="user" value="b3a3555ee6337d"></property>
+      <property name="portNumber" value="3306"></property>
+      <property name="url" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_a7c39aa98a99b33?reconnect=true"></property>
+      <property name="driver" value="com.mysql.jdbc.Driver"></property>
+      <property name="serverTimezone" value="UTC"></property>
+      <property name="useLegacyDatetimeCode" value="false"></property>
+      <property name="useJDBCCompliantTimezoneShift" value="true"></property>
+      <property name="useUnicode" value="true"></property>
+      <property name="useSSL" value="false"></property>
+      <property name="createDatabaseIfNotExist" value="true"></property>
+      <property name="host" value="eu-cdbr-west-03.cleardb.net"></property>
+    </jdbc-connection-pool>
+    <jdbc-resource pool-name="BoneCpPoolTP" jndi-name="java:app/jdbc/bonecp_macommande_tp"></jdbc-resource>
+</resources>
