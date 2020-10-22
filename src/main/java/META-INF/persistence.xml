@@ -9,7 +9,7 @@
         <class>com.sdzee.tp.entities.Client</class>
         <class>com.sdzee.tp.entities.Commande</class>
         <class>com.sdzee.tp.entities.Utilisateur</class>             
-        <properties>        
+   <!-- <properties>        
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_a7c39aa98a99b33?reconnect=true&amp;useSSL=false&amp;createDatabaseIfNotExist=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
             <property name="javax.persistence.jdbc.user" value="b3a3555ee6337d" />
@@ -17,5 +17,6 @@
             <property name="eclipselink.deploy-on-startup" value="true"/>
             <property name="eclipselink.target-database" value="MySQL"/>           
         </properties>
+    -->
     </persistence-unit>
 </persistence>
