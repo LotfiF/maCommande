@@ -1,13 +1,7 @@
 package com.sdzee.tp.startup;
 
 import java.io.File;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
-import org.apache.commons.dbcp2.BasicDataSource;
 import org.glassfish.embeddable.Deployer;
 import org.glassfish.embeddable.GlassFish;
 import org.glassfish.embeddable.GlassFishProperties;
@@ -36,10 +30,10 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 			
 	     } 
 		
-		public static Connection getConnection() throws URISyntaxException, SQLException {
+		/*	public static Connection getConnection() throws URISyntaxException, SQLException {
 			
-	  /*    String dbUrl = System.getenv("JDBC_DATABASE_URL");
-		    return DriverManager.getConnection(dbUrl); */
+	      String dbUrl = System.getenv("JDBC_DATABASE_URL");
+		    return DriverManager.getConnection(dbUrl); 
 		    
 		    URI dbUri = new URI(System.getenv("DATABASE_URL"));
 
@@ -59,7 +53,7 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 		    String password = dbUri.getUserInfo().split(":")[1];
 		    String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath(); */
 
-	    /*  return DriverManager.getConnection(dbUrl, username, password); */
+	    /*  return DriverManager.getConnection(dbUrl, username, password); 
 		
 	      }
 		
@@ -78,5 +72,5 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 			  connectionPool.setUrl(dbUrl);
 			  connectionPool.setInitialSize(1);
 			}
-		
+	*/	
 }
