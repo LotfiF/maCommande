@@ -26,8 +26,8 @@ import org.glassfish.embeddable.archive.ScatteredArchive;
 			Deployer deployer = glassfish.getDeployer();
 			ScatteredArchive archive = new ScatteredArchive("hello", ScatteredArchive.Type.WAR, webRoot);
 			archive.addClassPath(classRoot);
-			deployer.deploy(archive.toURI());
-		/*	deployer.deploy(archive.toURI(), "--name=hello", "--contextroot=/"); 	*/
+		/*	deployer.deploy(archive.toURI()); */
+			deployer.deploy(archive.toURI(), "--name=hello", "--contextroot=/"); 	
          
            
 		/* 	File file = new File("tp10-0.0.1-SNAPSHOT.war"); 
