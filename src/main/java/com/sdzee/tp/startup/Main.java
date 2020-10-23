@@ -28,7 +28,8 @@ import org.glassfish.embeddable.GlassFishRuntime;
 			deployer.deploy(archive.toURI(), "--name=hello", "--contextroot=/"); */		
          
            
-			File file = new File("tp10-0.0.1-SNAPSHOT.war");      
+	   /*	File file = new File("tp10-0.0.1-SNAPSHOT.war"); */
+			File file = new File("tp10.war");
 			deployer.deploy(file);
 			
 	     } 
