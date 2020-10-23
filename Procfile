@@ -1,2 +1,1 @@
-# On démarre le script généré par le plugin maven appassembler
-web: sh target/bin/startup
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.sdzee.tp.startup.Main
