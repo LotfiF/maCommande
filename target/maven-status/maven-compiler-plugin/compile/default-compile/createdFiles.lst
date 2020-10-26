@@ -2,6 +2,7 @@ com\sdzee\tp\servlets\Connexion.class
 com\sdzee\tp\forms\ConnexionForm.class
 com\sdzee\tp\servlets\CreationClient.class
 com\sdzee\tp\servlets\SuppressionClient.class
+META-INF\maven\com.sdzee.tp\tp10\pom.xml
 com\sdzee\tp\dao\ClientDao.class
 com\sdzee\tp\forms\CreationClientForm.class
 com\sdzee\tp\forms\InscriptionForm.class
@@ -12,6 +13,7 @@ com\sdzee\tp\entities\Commande.class
 com\sdzee\tp\startup\Main.class
 com\sdzee\tp\entities\Utilisateur.class
 com\sdzee\tp\dao\CommandeDao.class
+META-INF\MANIFEST.MF
 com\sdzee\tp\forms\CreationCommandeForm.class
 com\sdzee\tp\dao\DAOException.class
 com\sdzee\tp\servlets\SuppressionCommande.class
@@ -24,3 +26,4 @@ com\sdzee\tp\servlets\CreationCommande.class
 com\sdzee\tp\forms\FormValidationException.class
 com\sdzee\tp\servlets\Inscription.class
 com\sdzee\tp\tools\JodaDateTimeConverter.class
+META-INF\maven\com.sdzee.tp\tp10\pom.properties
