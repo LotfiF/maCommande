@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <persistence version="2.1" xmlns="http://java.sun.com/xml/ns/persistence"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
- http://java.sun.com/xml/ns/persistence/persistence_2_1.xsd">
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
     <persistence-unit name="ma_commande_PU" transaction-type="JTA">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <jta-data-source>java:app/jdbc/bonecp_macommande_tp</jta-data-source>        
         <class>com.sdzee.tp.entities.Client</class>
         <class>com.sdzee.tp.entities.Commande</class>
         <class>com.sdzee.tp.entities.Utilisateur</class>             
-   <!-- <properties>        
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_a7c39aa98a99b33?reconnect=true&amp;useSSL=false&amp;createDatabaseIfNotExist=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
-            <property name="javax.persistence.jdbc.user" value="b3a3555ee6337d" />
-            <property name="javax.persistence.jdbc.password" value="794817ce" />            
-            <property name="eclipselink.deploy-on-startup" value="true"/>
-            <property name="eclipselink.target-database" value="MySQL"/>           
-        </properties>
-    -->
     </persistence-unit>
 </persistence>

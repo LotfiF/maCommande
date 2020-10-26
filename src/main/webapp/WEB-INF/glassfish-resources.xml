@@ -1,41 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
 <resources>
-    <jdbc-connection-pool datasource-classname="com.jolbox.bonecp.BoneCPDataSource" name="BoneCpPoolTP" res-type="javax.sql.DataSource" transaction-isolation-level="read-committed" is-isolation-level-guaranteed="true" steady-pool-size="1" max-pool-size="20">
+    <jdbc-connection-pool datasource-classname="com.jolbox.bonecp.BoneCPDataSource" name="BoneCpPoolTP" res-type="javax.sql.DataSource">
       <property name="databaseName" value="heroku_a7c39aa98a99b33"></property>
-      <property name="Password" value="794817ce"></property>
-      <property name="serverName" value="glassfish-embedded-all 5.1.0"></property>
-      <property name="User" value="b3a3555ee6337d"></property>
+      <property name="serverName" value="GlassFish 5.1"></property>
       <property name="portNumber" value="3306"></property>
-      <property name="URL" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_a7c39aa98a99b33"></property>
-      <property name="driverClass" value="com.mysql.jdbc.Driver"></property> 
+      <property name="url" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_a7c39aa98a99b33?reconnect=true"></property>
+      <property name="serverTimezone" value="UTC"></property>
+      <property name="useLegacyDatetimeCode" value="false"></property>
+      <property name="useJDBCCompliantTimezoneShift" value="true"></property>
+      <property name="useUnicode" value="true"></property>
+      <property name="useSSL" value="false"></property>
+      <property name="createDatabaseIfNotExist" value="true"></property>
       <property name="host" value="eu-cdbr-west-03.cleardb.net"></property>
-        <property name="minConnectionsPerPartition" value="1"/>
-        <property name="maxConnectionsPerPartition" value="20"/>
-        <property name="acquireIncrement" value="2"/>
-        <property name="partitionCount" value="1"/>
-        <property name="idleMaxAgeInMinutes" value="60"/>
-        <property name="idleMaxAgeInSeconds" value="3600"/>
-        <property name="connectionTestStatement" value="/* ping *\/ SELECT 1"/>
-        <property name="statementsCacheSize" value="0"/>
-        <property name="releaseHelperThreads" value="3"/>
-        <property name="closeConnectionWatch" value="false"/>
-        <property name="logStatementsEnabled" value="false"/>
-        <property name="acquireRetryDelayInMs" value="7000"/>
-        <property name="lazyInit" value="false"/>
-        <property name="transactionRecoveryEnabled" value="false"/>
-        <property name="acquireRetryAttempts" value="5"/>
-        <property name="disableJMX" value="false"/>
-        <property name="queryExecuteTimeLimitInMs" value="0"/>
-        <property name="poolAvailabilityThreshold" value="20"/>
-        <property name="disableConnectionTracking" value="false"/>
-        <property name="connectionTimeoutInMs" value="0"/>
-        <property name="closeConnectionWatchTimeoutInMs" value="0"/>
-        <property name="statementReleaseHelperThreads" value="0"/>
-        <property name="maxConnectionAgeInSeconds" value="0"/>
-        <property name="statisticsEnabled" value="false"/>
-        <property name="externalAuth" value="false"/>
-        <property name="deregisterDriverOnClose" value="false"/>   
+      <property name="autoReconnect" value="true"></property>
+      <property name="Password" value="794817ce"></property>
+      <property name="User" value="b3a3555ee6337d"></property>
+      <property name="driverClass" value="com.mysql.jdbc.Driver"></property>  
     </jdbc-connection-pool>
-    <jdbc-resource enabled="true" object-type="user" pool-name="BoneCpPoolTP" jndi-name="java:app/jdbc/bonecp_macommande_tp"></jdbc-resource>
+    <jdbc-resource pool-name="BoneCPPoolTP" jndi-name="jdbc/bonecp_resource_tp"></jdbc-resource>
 </resources>
