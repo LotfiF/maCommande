@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
 <resources>
-    <jdbc-connection-pool datasource-classname="com.jolbox.bonecp.BoneCPDataSource" name="BoneCpPoolTP" res-type="javax.sql.DataSource">
-      <property name="databaseName" value="heroku_a7c39aa98a99b33"></property>
-      <property name="serverName" value="glassfish-embedded-all 5.1.0"></property>
+    <jdbc-connection-pool datasource-classname="com.mysql.cj.jdbc.MysqlDataSource" name="BoneCpPoolTP" res-type="javax.sql.DataSource">
+      <property name="databaseName" value="heroku_9de6759f21acd51"></property>
       <property name="portNumber" value="3306"></property>
-      <property name="url" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_a7c39aa98a99b33?reconnect=true"></property>
+      <property name="url" value="jdbc:mysql://eu-cdbr-west-03.cleardb.net:3306/heroku_9de6759f21acd51"></property>
       <property name="serverTimezone" value="UTC"></property>
       <property name="useLegacyDatetimeCode" value="false"></property>
       <property name="useJDBCCompliantTimezoneShift" value="true"></property>
@@ -14,8 +13,8 @@
       <property name="createDatabaseIfNotExist" value="true"></property>
       <property name="host" value="eu-cdbr-west-03.cleardb.net"></property>
       <property name="autoReconnect" value="true"></property>
-      <property name="Password" value="794817ce"></property>
-      <property name="User" value="b3a3555ee6337d"></property>
+      <property name="Password" value="d3c6d983"></property>
+      <property name="User" value="b98674eefa9409"></property>
       <property name="driverClass" value="com.mysql.jdbc.Driver"></property>  
     </jdbc-connection-pool>
     <jdbc-resource pool-name="BoneCpPoolTP" jndi-name="java:app/jdbc/bonecp_macommande_tp"></jdbc-resource>
