@@ -122,7 +122,7 @@
             <scope>provided</scope>
         </dependency>
            
-              <!-- dependencies Heroku   -->
+              <!-- dependencies Heroku   
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
@@ -138,7 +138,8 @@
         	<groupId>com.heroku.sdk</groupId>
         	<artifactId>heroku-jdbc</artifactId>
         	<version>0.1.1</version>
-        </dependency>       
+        </dependency>
+        -->       
   </dependencies>
   
   
