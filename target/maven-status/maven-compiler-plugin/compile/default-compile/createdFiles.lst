@@ -5,6 +5,7 @@ com\sdzee\tp\servlets\SuppressionClient.class
 com\sdzee\tp\dao\ClientDao.class
 com\sdzee\tp\forms\CreationClientForm.class
 com\sdzee\tp\forms\InscriptionForm.class
+com\sdzee\tp\entities\Commande_.class
 com\sdzee\tp\dao\UtilisateurDao.class
 com\sdzee\tp\entities\Client.class
 com\sdzee\tp\servlets\ListeCommandes.class
@@ -17,7 +18,9 @@ com\sdzee\tp\dao\DAOException.class
 com\sdzee\tp\servlets\SuppressionCommande.class
 com\sdzee\tp\servlets\Deconnexion.class
 com\sdzee\tp\servlets\Image.class
+com\sdzee\tp\entities\Client_.class
 com\sdzee\tp\dao\DAOConfigurationException.class
+com\sdzee\tp\entities\Utilisateur_.class
 com\sdzee\tp\servlets\ListeClients.class
 com\sdzee\tp\filters\PrechargementFilter.class
 com\sdzee\tp\servlets\CreationCommande.class
